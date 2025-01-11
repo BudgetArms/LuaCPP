@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe;-P;C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/download-sdl-populate.cmake;COMMAND;C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe;-P;C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/verify-sdl-populate.cmake;COMMAND;C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe;-P;C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/extract-sdl-populate.cmake
+source_dir=C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src
+work_dir=C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps
+url(s)=https://github.com/libsdl-org/SDL/releases/download/release-2.30.9/SDL2-2.30.9.tar.gz
+hash=
+no_extract=
+

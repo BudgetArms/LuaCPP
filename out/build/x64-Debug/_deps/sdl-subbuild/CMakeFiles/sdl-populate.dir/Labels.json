@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-subbuild/CMakeFiles/sdl-populate"
+		},
+		{
+			"file" : "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-subbuild/CMakeFiles/sdl-populate.rule"
+		},
+		{
+			"file" : "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-subbuild/CMakeFiles/sdl-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/sdl-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/sdl-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/sdl-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/sdl-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/sdl-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/sdl-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/sdl-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/sdl-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"sdl-populate"
+		],
+		"name" : "sdl-populate"
+	}
+}

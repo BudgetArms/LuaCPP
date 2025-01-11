@@ -1,0 +1,861 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33141 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCCompilerId.c
+      Microsoft (R) Incremental Linker Version 14.38.33141.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCCompilerId.exe 
+      CMakeCCompilerId.obj 
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/3.29.5-msvc4/CompilerIdC/CMakeCCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1216 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33141 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.38.33141.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/3.29.5-msvc4/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1216 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-t8m4mt"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-t8m4mt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-t8m4mt'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_c8db4
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_c8db4.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_c8db4.dir\\ /FS -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c8db4.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c8db4.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_c8db4.exe /implib:cmTC_c8db4.lib /pdb:cmTC_c8db4.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/PROGRA~1/MICROS~1/2022/ENTERP~1/VC/Tools/MSVC/1438~1.331/bin/Hostx64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the C compiler's linker: "C:/PROGRA~1/MICROS~1/2022/ENTERP~1/VC/Tools/MSVC/1438~1.331/bin/Hostx64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.38.33141.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-dy73y2"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-dy73y2"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-dy73y2'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_fa432
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_fa432.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_fa432.dir\\ /FS -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_fa432.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_fa432.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_fa432.exe /implib:cmTC_fa432.lib /pdb:cmTC_fa432.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/PROGRA~1/MICROS~1/2022/ENTERP~1/VC/Tools/MSVC/1438~1.331/bin/Hostx64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/PROGRA~1/MICROS~1/2022/ENTERP~1/VC/Tools/MSVC/1438~1.331/bin/Hostx64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.38.33141.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:82 (check_symbol_exists)"
+    checks:
+      - "Looking for __GLIBC__"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-f2npk1"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-f2npk1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "LIBC_IS_GLIBC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-f2npk1'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_64a60
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_64a60.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_64a60.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-f2npk1\\CheckSymbolExists.c"
+        FAILED: CMakeFiles/cmTC_64a60.dir/CheckSymbolExists.c.obj 
+        C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_64a60.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_64a60.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-f2npk1\\CheckSymbolExists.c"
+        C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-f2npk1\\CheckSymbolExists.c(8): error C2065: '__GLIBC__': undeclared identifier
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "out/build/x64-Debug/_deps/sdl-src/cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
+      - "out/build/x64-Debug/_deps/sdl-src/cmake/CheckCPUArchitecture.cmake:28 (_internal_check_cpu_architecture)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:139 (check_cpu_architecture)"
+    checks:
+      - "Performing Test CHECK_CPU_ARCHITECTURE_X86"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-noeukv"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-noeukv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "CHECK_CPU_ARCHITECTURE_X86"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-noeukv'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_81338
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_X86  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_81338.dir\\src.c.obj /FdCMakeFiles\\cmTC_81338.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-noeukv\\src.c"
+        FAILED: CMakeFiles/cmTC_81338.dir/src.c.obj 
+        C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_X86  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_81338.dir\\src.c.obj /FdCMakeFiles\\cmTC_81338.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-noeukv\\src.c"
+        C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-noeukv\\src.c(8): error C2065: 'choke': undeclared identifier
+        C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-noeukv\\src.c(8): error C2143: syntax error: missing ';' before '}'
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "out/build/x64-Debug/_deps/sdl-src/cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
+      - "out/build/x64-Debug/_deps/sdl-src/cmake/CheckCPUArchitecture.cmake:30 (_internal_check_cpu_architecture)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:140 (check_cpu_architecture)"
+    checks:
+      - "Performing Test CHECK_CPU_ARCHITECTURE_X64"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ky61h2"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ky61h2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "CHECK_CPU_ARCHITECTURE_X64"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ky61h2'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_2f0a9
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_X64  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_2f0a9.dir\\src.c.obj /FdCMakeFiles\\cmTC_2f0a9.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ky61h2\\src.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_2f0a9.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_2f0a9.dir\\src.c.obj  /out:cmTC_2f0a9.exe /implib:cmTC_2f0a9.lib /pdb:cmTC_2f0a9.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "out/build/x64-Debug/_deps/sdl-src/cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
+      - "out/build/x64-Debug/_deps/sdl-src/cmake/CheckCPUArchitecture.cmake:32 (_internal_check_cpu_architecture)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:141 (check_cpu_architecture)"
+    checks:
+      - "Performing Test CHECK_CPU_ARCHITECTURE_ARM32"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-vdsp2b"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-vdsp2b"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "CHECK_CPU_ARCHITECTURE_ARM32"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-vdsp2b'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_ffec7
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM32  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_ffec7.dir\\src.c.obj /FdCMakeFiles\\cmTC_ffec7.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-vdsp2b\\src.c"
+        FAILED: CMakeFiles/cmTC_ffec7.dir/src.c.obj 
+        C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM32  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_ffec7.dir\\src.c.obj /FdCMakeFiles\\cmTC_ffec7.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-vdsp2b\\src.c"
+        C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-vdsp2b\\src.c(8): error C2065: 'choke': undeclared identifier
+        C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-vdsp2b\\src.c(8): error C2143: syntax error: missing ';' before '}'
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "out/build/x64-Debug/_deps/sdl-src/cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
+      - "out/build/x64-Debug/_deps/sdl-src/cmake/CheckCPUArchitecture.cmake:34 (_internal_check_cpu_architecture)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:142 (check_cpu_architecture)"
+    checks:
+      - "Performing Test CHECK_CPU_ARCHITECTURE_ARM64"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-tfas6c"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-tfas6c"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "CHECK_CPU_ARCHITECTURE_ARM64"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-tfas6c'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_51a19
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM64  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_51a19.dir\\src.c.obj /FdCMakeFiles\\cmTC_51a19.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-tfas6c\\src.c"
+        FAILED: CMakeFiles/cmTC_51a19.dir/src.c.obj 
+        C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM64  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_51a19.dir\\src.c.obj /FdCMakeFiles\\cmTC_51a19.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-tfas6c\\src.c"
+        C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-tfas6c\\src.c(8): error C2065: 'choke': undeclared identifier
+        C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-tfas6c\\src.c(8): error C2143: syntax error: missing ';' before '}'
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "out/build/x64-Debug/_deps/sdl-src/cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
+      - "out/build/x64-Debug/_deps/sdl-src/cmake/CheckCPUArchitecture.cmake:36 (_internal_check_cpu_architecture)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:143 (check_cpu_architecture)"
+    checks:
+      - "Performing Test CHECK_CPU_ARCHITECTURE_LOONGARCH64"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-2s2yo1"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-2s2yo1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "CHECK_CPU_ARCHITECTURE_LOONGARCH64"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-2s2yo1'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_2c8b8
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_LOONGARCH64  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_2c8b8.dir\\src.c.obj /FdCMakeFiles\\cmTC_2c8b8.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-2s2yo1\\src.c"
+        FAILED: CMakeFiles/cmTC_2c8b8.dir/src.c.obj 
+        C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_LOONGARCH64  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_2c8b8.dir\\src.c.obj /FdCMakeFiles\\cmTC_2c8b8.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-2s2yo1\\src.c"
+        C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-2s2yo1\\src.c(8): error C2065: 'choke': undeclared identifier
+        C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-2s2yo1\\src.c(8): error C2143: syntax error: missing ';' before '}'
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:1003 (check_include_file)"
+    checks:
+      - "Looking for immintrin.h"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-q1g1jd"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-q1g1jd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "HAVE_IMMINTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-q1g1jd'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_4d145
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_4d145.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_4d145.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-q1g1jd\\CheckIncludeFile.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_4d145.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4d145.dir\\CheckIncludeFile.c.obj  /out:cmTC_4d145.exe /implib:cmTC_4d145.lib /pdb:cmTC_4d145.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:1166 (check_include_file)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-iai0tq"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-iai0tq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-iai0tq'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_d29cf
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_d29cf.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_d29cf.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-iai0tq\\CheckIncludeFile.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_d29cf.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_d29cf.dir\\CheckIncludeFile.c.obj  /out:cmTC_d29cf.exe /implib:cmTC_d29cf.lib /pdb:cmTC_d29cf.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:1768 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_WIN32_CC"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-41t63a"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-41t63a"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "HAVE_WIN32_CC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-41t63a'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_88148
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_WIN32_CC  /DWIN32 /D_WINDOWS  -D_GNU_SOURCE=1 /Zi /Ob0 /Od  -MDd /showIncludes /FoCMakeFiles\\cmTC_88148.dir\\src.c.obj /FdCMakeFiles\\cmTC_88148.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-41t63a\\src.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_88148.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_88148.dir\\src.c.obj  /out:cmTC_88148.exe /implib:cmTC_88148.lib /pdb:cmTC_88148.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:1802 (check_include_file)"
+    checks:
+      - "Looking for d3d9.h"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-94vrkb"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-94vrkb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "HAVE_D3D_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-94vrkb'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_cf6e6
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_cf6e6.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_cf6e6.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-94vrkb\\CheckIncludeFile.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_cf6e6.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_cf6e6.dir\\CheckIncludeFile.c.obj  /out:cmTC_cf6e6.exe /implib:cmTC_cf6e6.lib /pdb:cmTC_cf6e6.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:1803 (check_include_file)"
+    checks:
+      - "Looking for d3d11_1.h"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-17by77"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-17by77"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "HAVE_D3D11_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-17by77'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_165e8
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_165e8.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_165e8.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-17by77\\CheckIncludeFile.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_165e8.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_165e8.dir\\CheckIncludeFile.c.obj  /out:cmTC_165e8.exe /implib:cmTC_165e8.lib /pdb:cmTC_165e8.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:1804 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_D3D12_H"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-swljnm"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-swljnm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "HAVE_D3D12_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-swljnm'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_f2f8f
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_D3D12_H  /DWIN32 /D_WINDOWS  -D_GNU_SOURCE=1 /Zi /Ob0 /Od  -MDd /showIncludes /FoCMakeFiles\\cmTC_f2f8f.dir\\src.c.obj /FdCMakeFiles\\cmTC_f2f8f.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-swljnm\\src.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_f2f8f.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_f2f8f.dir\\src.c.obj  /out:cmTC_f2f8f.exe /implib:cmTC_f2f8f.lib /pdb:cmTC_f2f8f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:1810 (check_include_file)"
+    checks:
+      - "Looking for ddraw.h"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-9qliew"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-9qliew"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "HAVE_DDRAW_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-9qliew'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_16c93
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_16c93.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_16c93.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-9qliew\\CheckIncludeFile.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_16c93.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_16c93.dir\\CheckIncludeFile.c.obj  /out:cmTC_16c93.exe /implib:cmTC_16c93.lib /pdb:cmTC_16c93.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:1811 (check_include_file)"
+    checks:
+      - "Looking for dsound.h"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-8em3pd"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-8em3pd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "HAVE_DSOUND_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-8em3pd'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_a69a7
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_a69a7.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_a69a7.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-8em3pd\\CheckIncludeFile.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_a69a7.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a69a7.dir\\CheckIncludeFile.c.obj  /out:cmTC_a69a7.exe /implib:cmTC_a69a7.lib /pdb:cmTC_a69a7.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:1812 (check_include_file)"
+    checks:
+      - "Looking for dinput.h"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-8qnem7"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-8qnem7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "HAVE_DINPUT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-8qnem7'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_65880
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_65880.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_65880.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-8qnem7\\CheckIncludeFile.c"
+        C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\um\\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_65880.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_65880.dir\\CheckIncludeFile.c.obj  /out:cmTC_65880.exe /implib:cmTC_65880.lib /pdb:cmTC_65880.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:1816 (check_include_file)"
+    checks:
+      - "Looking for dxgi.h"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-1p8xdj"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-1p8xdj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "HAVE_DXGI_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-1p8xdj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_4b9e8
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_4b9e8.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_4b9e8.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-1p8xdj\\CheckIncludeFile.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_4b9e8.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4b9e8.dir\\CheckIncludeFile.c.obj  /out:cmTC_4b9e8.exe /implib:cmTC_4b9e8.lib /pdb:cmTC_4b9e8.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:1830 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_XINPUT_H"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-5nm23v"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-5nm23v"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "HAVE_XINPUT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-5nm23v'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_774ef
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_XINPUT_H  /DWIN32 /D_WINDOWS  -D_GNU_SOURCE=1 /Zi /Ob0 /Od  -MDd /showIncludes /FoCMakeFiles\\cmTC_774ef.dir\\src.c.obj /FdCMakeFiles\\cmTC_774ef.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-5nm23v\\src.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_774ef.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_774ef.dir\\src.c.obj  /out:cmTC_774ef.exe /implib:cmTC_774ef.lib /pdb:cmTC_774ef.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:1834 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_WINDOWS_GAMING_INPUT_H"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-5itcnn"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-5itcnn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "HAVE_WINDOWS_GAMING_INPUT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-5itcnn'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_ee145
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_WINDOWS_GAMING_INPUT_H  /DWIN32 /D_WINDOWS  -D_GNU_SOURCE=1 /Zi /Ob0 /Od  -MDd /showIncludes /FoCMakeFiles\\cmTC_ee145.dir\\src.c.obj /FdCMakeFiles\\cmTC_ee145.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-5itcnn\\src.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_ee145.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_ee145.dir\\src.c.obj  /out:cmTC_ee145.exe /implib:cmTC_ee145.lib /pdb:cmTC_ee145.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:1842 (check_include_file)"
+    checks:
+      - "Looking for tpcshrd.h"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-519s75"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-519s75"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "HAVE_TPCSHRD_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-519s75'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_4a83a
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_4a83a.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_4a83a.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-519s75\\CheckIncludeFile.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_4a83a.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4a83a.dir\\CheckIncludeFile.c.obj  /out:cmTC_4a83a.exe /implib:cmTC_4a83a.lib /pdb:cmTC_4a83a.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:1843 (check_include_file)"
+    checks:
+      - "Looking for roapi.h"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-tvkbdm"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-tvkbdm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "HAVE_ROAPI_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-tvkbdm'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_1e3bf
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_1e3bf.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_1e3bf.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-tvkbdm\\CheckIncludeFile.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_1e3bf.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_1e3bf.dir\\CheckIncludeFile.c.obj  /out:cmTC_1e3bf.exe /implib:cmTC_1e3bf.lib /pdb:cmTC_1e3bf.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:1844 (check_include_file)"
+    checks:
+      - "Looking for mmdeviceapi.h"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-0igjzj"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-0igjzj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "HAVE_MMDEVICEAPI_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-0igjzj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_ac0c5
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_ac0c5.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_ac0c5.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-0igjzj\\CheckIncludeFile.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_ac0c5.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_ac0c5.dir\\CheckIncludeFile.c.obj  /out:cmTC_ac0c5.exe /implib:cmTC_ac0c5.lib /pdb:cmTC_ac0c5.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:1845 (check_include_file)"
+    checks:
+      - "Looking for audioclient.h"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-wc5len"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-wc5len"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "HAVE_AUDIOCLIENT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-wc5len'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_0e652
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_0e652.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_0e652.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-wc5len\\CheckIncludeFile.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_0e652.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_0e652.dir\\CheckIncludeFile.c.obj  /out:cmTC_0e652.exe /implib:cmTC_0e652.lib /pdb:cmTC_0e652.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:1846 (check_include_file)"
+    checks:
+      - "Looking for sensorsapi.h"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-zetmol"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-zetmol"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "HAVE_SENSORSAPI_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-zetmol'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_e6ba5
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_e6ba5.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_e6ba5.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-zetmol\\CheckIncludeFile.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_e6ba5.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e6ba5.dir\\CheckIncludeFile.c.obj  /out:cmTC_e6ba5.exe /implib:cmTC_e6ba5.lib /pdb:cmTC_e6ba5.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "out/build/x64-Debug/_deps/sdl-src/CMakeLists.txt:1847 (check_include_file)"
+    checks:
+      - "Looking for shellscalingapi.h"
+    directories:
+      source: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-6deql2"
+      binary: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-6deql2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/_deps/sdl-src/cmake"
+    buildResult:
+      variable: "HAVE_SHELLSCALINGAPI_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/budget/DAE/2024-2025/Semester 5/Software Engineering/Assignments/Exam/SE_Exam_2GD10E_Last_First/Project/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-6deql2'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_2dd3b
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_2dd3b.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_2dd3b.dir\\ /FS -c "C:\\Users\\budget\\DAE\\2024-2025\\Semester 5\\Software Engineering\\Assignments\\Exam\\SE_Exam_2GD10E_Last_First\\Project\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-6deql2\\CheckIncludeFile.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_2dd3b.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_2dd3b.dir\\CheckIncludeFile.c.obj  /out:cmTC_2dd3b.exe /implib:cmTC_2dd3b.lib /pdb:cmTC_2dd3b.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+...
