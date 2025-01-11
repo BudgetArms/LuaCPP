@@ -36,21 +36,21 @@ FetchContent_MakeAvailable(sdl)
 
 # Gather Sources
 list(APPEND SOURCES 
-            "src/main.cpp" "src/GameEngine.cpp" "src/Game.cpp" "src/AbstractGame.cpp" "src/GameWinMain.cpp" 
-            #"src/main.cpp" "src/GameEngine.cpp"
-            #"src/main.cpp" "src/GameWinMain.cpp"
-            #"src/main.cpp"
+            "Game/main.cpp" "Engine/GameEngine.cpp" "Engine/Game.cpp" "Engine/AbstractGame.cpp" "Engine/GameWinMain.cpp" 
 )
 
 list(APPEND LUA_SOURCES 
-            "GameEngine.lua"
+            "Game/GameEngine.lua"
             )
 
 # Executable Target
 add_executable(${PROJECT_NAME} ${SOURCES})
 target_link_libraries(${PROJECT_NAME} PRIVATE SDL2::SDL2-static lua::lua sol2)
 target_include_directories(${PROJECT_NAME} PRIVATE ${SDL2_SOURCE_DIR}/include)
-target_include_directories(${PROJECT_NAME} PRIVATE src)
+
+#target_include_directories(${PROJECT_NAME} PRIVATE src)
+target_include_directories(${PROJECT_NAME} PRIVATE Engine)
+#target_include_directories(${PROJECT_NAME} PRIVATE Engine)
 
 
 add_definitions(-DUNICODE -D_UNICODE)

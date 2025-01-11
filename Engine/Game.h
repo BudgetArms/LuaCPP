@@ -13,6 +13,11 @@
 #include "GameEngine.h"
 #include "AbstractGame.h"
 
+
+// include sol
+//#include <sol/sol.hpp>
+
+
 //-----------------------------------------------------------------
 // Game Class																
 //-----------------------------------------------------------------
@@ -55,6 +60,18 @@ private:
 	// Datamembers
 	// -------------------------
 
+
+	//sol::function m_FnInitialize;
+	//sol::function m_FnStart;
+	//sol::function m_FnEnd;
+	//sol::function m_FnPaint;
+	//sol::function m_FnTick;
+	//sol::function m_FnMouseButtonAction;
+	//sol::function m_FnMouseWheelAction;
+	//sol::function m_FnMouseMove;
+	//sol::function m_FnCheckKeyboard;
+	//sol::function m_FnKeyPressed;
+	//sol::function m_FnCallAction;
 
 
 };

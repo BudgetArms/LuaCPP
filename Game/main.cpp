@@ -2,39 +2,32 @@
 #include <iostream>
 #include <filesystem>
 
-//#include "Flower.h"
-#include "GameEngine.h"
-#include "Game.h"
+#include "../Engine/GameEngine.h"
+#include "../Engine/Game.h"
 
 extern GameEngine* GAME_ENGINE;
 
-void RunGame();
-void SetGamer();
 
-
+// This file is currently used for testing how Lua/SOL2 work
 int main()
 {
 	try
 	{
 
-		std::cout << "main\n";
+		std::cout << "main.cpp\n";
 
 		sol::state lua;
 
-		lua.open_libraries(sol::lib::base);
-
-
-
+		// calls standard libs
+		lua.open_libraries();
 
 		lua["Game"] = GAME_ENGINE;
 
 
 		lua.new_usertype<GameEngine>
 			(
+				//"GameEngine", sol::no_constructor,
 				"GameEngine", sol::constructors<GameEngine()>(),
-				"RunGame", RunGame,
-				"GAMERS", SetGamer,
-
 				"SetTitle", &GameEngine::SetTitle,
 				"SetWindowPosition", &GameEngine::SetWindowPosition,
 				"SetKeyList", &GameEngine::SetKeyList,
@@ -47,15 +40,13 @@ int main()
 				"Quit", &GameEngine::Quit,
 				"HasWindowRegion", &GameEngine::HasWindowRegion,
 				"IsFullscreen", &GameEngine::IsFullscreen,
-
-				//"CreateWindow", &GameEngine::
-
 				"IsKeyDown", &GameEngine::IsKeyDown,
-				//"MessageBox", &GameEngine::MessageBox,
+
 				//"MessageBox", sol::overload(
-					//sol::resolve<void(const tstring&) const> (&GameEngine::MessageBox),
-					//sol::resolve<void(const TCHAR*) const> (&GameEngine::MessageBox)
+				//	sol::resolve<void(const tstring&) const> (&GameEngine::MessageBox),
+				//	sol::resolve<void(const TCHAR*) const> (&GameEngine::MessageBox)
 				//),
+
 				"SetColor", &GameEngine::SetColor,
 				"DrawLine", &GameEngine::DrawLine,
 				"DrawRect", &GameEngine::DrawRect,
@@ -99,7 +90,7 @@ int main()
 
 
 
-		const auto scriptResult = lua.script_file("GameEngine.lua");
+		const auto scriptResult = lua.script_file("Game/GameEngine.lua");
 		if (!scriptResult.valid())
 		{
 			// Handle Script error
@@ -122,30 +113,4 @@ int main()
 
 
 	return 0;
-}
-
-
-
-void RunGame()
-{
-	std::cout << "RunGame" << "\n";
-	std::cout << GAME_ENGINE << "\n";
-	
-	// Simulate initializing from GameWinMain to set `hInstance` and `nCmdShow`
-	HINSTANCE hInstance = GetModuleHandle(nullptr);  // Typically retrieved in wWinMain
-	int nCmdShow = SW_SHOWNORMAL;  // Typical default for nCmdShow, but can be customized.
-
-	//GAME_ENGINE->SetGame(new Game());
-	//GAME_ENGINE->Run(hInstance, nCmdShow);
-
-
-
-} 
-
-
-
-void SetGamer()
-{
-	GAME_ENGINE->SetGame(new Game());
-
 }

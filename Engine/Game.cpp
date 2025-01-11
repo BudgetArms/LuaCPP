@@ -15,6 +15,10 @@
 Game::Game() 																	
 {
 	// nothing to create
+
+
+
+
 }
 
 Game::~Game()																						
