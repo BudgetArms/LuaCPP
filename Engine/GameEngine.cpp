@@ -100,7 +100,8 @@ bool GameEngine::Run(HINSTANCE hInstance, int cmdShow)
 	m_GamePtr->Initialize();
 
 	// Create the game window
-	if (!CreateGameWindow(cmdShow)) return false;
+	if (!CreateGameWindow(cmdShow)) 
+		return false;
 
 	// Double buffering code
 	HDC hDC = GetDC(m_Window);
@@ -163,7 +164,7 @@ bool GameEngine::Run(HINSTANCE hInstance, int cmdShow)
 	DeleteDC(hBufferDC);
 
 	// Exit
-	return msg.wParam?true:false;
+	return msg.wParam ? true : false;
 }
 
 void GameEngine::PaintDoubleBuffered(HDC hDC)
@@ -187,7 +188,8 @@ void GameEngine::ShowMousePointer(bool value)
 
 bool GameEngine::SetWindowRegion(const HitRegion* regionPtr)
 {
-	if (m_Fullscreen) return false;
+	if (m_Fullscreen) 
+		return false;
 
 	if (regionPtr == nullptr) 
 	{	
@@ -225,13 +227,14 @@ bool GameEngine::SetWindowRegion(const HitRegion* regionPtr)
 
 bool GameEngine::HasWindowRegion() const
 {
-	return (m_WindowRegionPtr?true:false);
+	return (m_WindowRegionPtr ? true : false);
 }
 
 bool GameEngine::GoFullscreen()
 {
 	// exit if already in fullscreen mode
-	if (m_Fullscreen) return false;
+	if (m_Fullscreen) 
+		return false;
 
 	// turn off window region without redraw
 	SetWindowRgn(m_Window, NULL, false);
@@ -274,7 +277,8 @@ bool GameEngine::GoFullscreen()
 bool GameEngine::GoWindowedMode()
 {
 	// exit if already in windowed mode
-	if (!m_Fullscreen) return false;
+	if (!m_Fullscreen) 
+		return false;
 
 	// this resets the screen to the registry-stored values
   	ChangeDisplaySettings(0, 0);
@@ -310,7 +314,8 @@ bool GameEngine::CreateGameWindow(int cmdShow)
 	wndclass.lpszClassName  = m_Title.c_str();
 	
 	// Register the window class
-	if (!RegisterClassEx(&wndclass)) return false;
+	if (!RegisterClassEx(&wndclass)) 
+		return false;
 	
 	// Calculate window dimensions based on client rect
 	RECT windowRect{0, 0, m_Width, m_Height};
@@ -339,7 +344,8 @@ bool GameEngine::CreateGameWindow(int cmdShow)
 							m_Instance, 
 							NULL);
 
-	if (!m_Window) return false;
+	if (!m_Window) 
+		return false;
 	
 	// Show and update the window
 	ShowWindow(m_Window, cmdShow);
@@ -350,8 +356,10 @@ bool GameEngine::CreateGameWindow(int cmdShow)
 
 bool GameEngine::IsKeyDown(int vKey) const
 {
-	if (GetAsyncKeyState(vKey) < 0) return true;
-	else return false;
+	if (GetAsyncKeyState(vKey) < 0) 
+		return true;
+	else 
+		return false;
 }
 
 void GameEngine::SetKeyList(const tstring& keyList)
@@ -434,8 +442,10 @@ void GameEngine::TabNext(HWND ChildWindow) const
 	HWND temp{ childWindows[position] };
 	while(temp != ChildWindow) temp = childWindows[++position]; // find the childWindow in the vector
 
-	if (position == childWindows.size() - 1) SetFocus(childWindows[0]);
-	else SetFocus(childWindows[position + 1]);
+	if (position == childWindows.size() - 1) 
+		SetFocus(childWindows[0]);
+	else 
+		SetFocus(childWindows[position + 1]);
 }
 
 void GameEngine::TabPrevious(HWND ChildWindow) const
@@ -448,8 +458,10 @@ void GameEngine::TabPrevious(HWND ChildWindow) const
 	HWND temp{ childWindows[position] };
 	while(temp != ChildWindow) temp = childWindows[--position]; // find the childWindow in the vector
 
-	if (position == 0) SetFocus(childWindows[childWindows.size() - 1]);
-	else SetFocus(childWindows[position - 1]);
+	if (position == 0) 
+		SetFocus(childWindows[childWindows.size() - 1]);
+	else 
+		SetFocus(childWindows[position - 1]);
 }
 
 void GameEngine::SetInstance(HINSTANCE hInstance) 
@@ -532,7 +544,8 @@ bool GameEngine::DrawPolygon(const POINT ptsArr[], int count, bool close) const
 
 		return true;
 	}
-	else return false;
+	else 
+		return false;
 }
 
 bool GameEngine::FillPolygon(const POINT ptsArr[], int count) const
@@ -564,12 +577,14 @@ bool GameEngine::FillPolygon(const POINT ptsArr[], int count, bool close) const
 
 		return true;
 	}
-	else return false;
+	else 
+		return false;
 }
 
 void GameEngine::FormPolygon(const POINT ptsArr[], int count, bool close) const
 {
-	if (!close) Polyline(m_HdcDraw, ptsArr, count);
+	if (!close) 
+		Polyline(m_HdcDraw, ptsArr, count);
 	else
 	{
 		POINT* newPtsArr= new POINT[count+1]; // interesting case: this code does not work with memory allocation at compile time => demo case for dynamic memory use
@@ -597,7 +612,8 @@ bool GameEngine::DrawRect(int left, int top, int right, int bottom) const
 
 		return true;
 	}
-	else return false;
+	else 
+		return false;
 }
 
 bool GameEngine::FillRect(int left, int top, int right, int bottom) const
@@ -620,7 +636,8 @@ bool GameEngine::FillRect(int left, int top, int right, int bottom) const
 
 		return true;
 	}
-	else return false;
+	else 
+		return false;
 }
 
 bool GameEngine::FillRect(int left, int top, int right, int bottom, int opacity) const
@@ -681,7 +698,8 @@ bool GameEngine::DrawRoundRect(int left, int top, int right, int bottom, int rad
 
 		return true;
 	}
-	else return false;
+	else 
+		return false;
 }
 
 bool GameEngine::FillRoundRect(int left, int top, int right, int bottom, int radius) const
@@ -704,7 +722,8 @@ bool GameEngine::FillRoundRect(int left, int top, int right, int bottom, int rad
 
 		return true;
 	}
-	else return false;
+	else 
+		return false;
 }
 
 bool GameEngine::DrawOval(int left, int top, int right, int bottom) const
@@ -721,7 +740,8 @@ bool GameEngine::DrawOval(int left, int top, int right, int bottom) const
 
 		return true;
 	}
-	else return false;
+	else 
+		return false;
 }
 
 bool GameEngine::FillOval(int left, int top, int right, int bottom) const
@@ -744,7 +764,8 @@ bool GameEngine::FillOval(int left, int top, int right, int bottom) const
 
 		return true;
 	}
-	else return false;
+	else 
+		return false;
 }
 
 bool GameEngine::FillOval(int left, int top, int right, int bottom, int opacity) const
@@ -752,7 +773,9 @@ bool GameEngine::FillOval(int left, int top, int right, int bottom, int opacity)
 	if (m_IsPainting)
 	{
 		COLORREF color = m_ColDraw;
-		if (color == RGB(0, 0, 0)) color = RGB(0, 0, 1);
+
+		if (color == RGB(0, 0, 0)) 
+			color = RGB(0, 0, 1);
 
 		HDC tempHdc = CreateCompatibleDC(m_HdcDraw);
 
@@ -811,15 +834,18 @@ bool GameEngine::FillOval(int left, int top, int right, int bottom, int opacity)
 
 		return true;
 	}
-	else return false;
+	else 
+		return false;
 }
 
 bool GameEngine::DrawArc(int left, int top, int right, int bottom, int startDegree, int angle) const
 {
 	if (m_IsPainting)
 	{
-		if (angle == 0) return false;
-		if (angle > 360) { DrawOval(left, top, right, bottom); }
+		if (angle == 0) 
+			return false;
+		if (angle > 360) 
+			DrawOval(left, top, right, bottom);
 		else
 		{
 			HPEN hOldPen, hNewPen = CreatePen(PS_SOLID, 1, m_ColDraw);
@@ -837,15 +863,18 @@ bool GameEngine::DrawArc(int left, int top, int right, int bottom, int startDegr
 
 		return true;
 	}
-	else return false;
+	else 
+		return false;
 }
 
 bool GameEngine::FillArc(int left, int top, int right, int bottom, int startDegree, int angle) const
 {
 	if (m_IsPainting)
 	{
-		if (angle == 0) return false;
-		if (angle > 360) { FillOval(left, top, right, bottom); }
+		if (angle == 0) 
+			return false;
+		if (angle > 360)
+			FillOval(left, top, right, bottom);
 		else
 		{
 			HBRUSH hOldBrush, hNewBrush = CreateSolidBrush(m_ColDraw);
@@ -869,7 +898,8 @@ bool GameEngine::FillArc(int left, int top, int right, int bottom, int startDegr
 
 		return true;
 	}
-	else return false;
+	else 
+		return false;
 }
 
 POINT GameEngine::AngleToPoint(int left, int top, int right, int bottom, int angle) const
@@ -880,14 +910,33 @@ POINT GameEngine::AngleToPoint(int left, int top, int right, int bottom, int ang
 	const int height{ bottom - top  };
 
 	// if necessary adjust angle so that it has a value between 0 and 360 degrees
-	if (angle > 360 || angle < -360) angle = angle % 360;
-	if (angle < 0) angle += 360;
+	if (angle > 360 || angle < -360) 
+		angle = angle % 360;
+
+	if (angle < 0) 
+		angle += 360;
 
 	// default values for standard angles
-	if		(angle == 0)	{ pt.x = right;					pt.y = top + (height / 2);	}
-	else if (angle == 90)	{ pt.x = left + (width / 2);	pt.y = top;					}
-	else if (angle == 180)	{ pt.x = left;					pt.y = top + (height / 2);	}
-	else if (angle == 270)	{ pt.x = left + (width / 2);	pt.y = top + height;		}
+	if		(angle == 0)	
+	{ 
+		pt.x = right;	
+		pt.y = top + (height / 2);
+	}
+	else if (angle == 90)	
+	{
+		pt.x = left + (width / 2);	pt.y = top;	
+	}
+	else if (angle == 180)	
+	{
+		pt.x = left;		
+		pt.y = top + (height / 2);
+	}
+	else if (angle == 270)	
+	{
+		pt.x = left + (width / 2);
+		pt.y = top + height;	
+	}
+
 	// else calculate non-default values
 	else
 	{
@@ -899,8 +948,11 @@ POINT GameEngine::AngleToPoint(int left, int top, int right, int bottom, int ang
 		double tanSquare	= pow(tangens, 2);
 
 		// calculate x
-		pt.x = (long) sqrt( aSquare * bSquare / (bSquare + tanSquare * aSquare));
-		if (angle > 90 && angle < 270) pt.x *= -1; // sqrt returns the positive value of the square, take the negative value if necessary
+		pt.x = (long) 
+			sqrt( aSquare * bSquare / (bSquare + tanSquare * aSquare));
+
+		if (angle > 90 && angle < 270) 
+			pt.x *= -1; // sqrt returns the positive value of the square, take the negative value if necessary
 
 		// calculate y
 		pt.y = (long) (tangens * pt.x);
@@ -949,7 +1001,8 @@ int GameEngine::DrawString(const tstring& text, int left, int top, int right, in
 			return result;
 		}
 	}
-	else return -1;
+	else
+		return -1;
 }
 
 int GameEngine::DrawString(const tstring& text, int left, int top) const
@@ -985,7 +1038,8 @@ int GameEngine::DrawString(const tstring& text, int left, int top) const
 			return result;
 		}
 	}
-	else return -1;
+	else 
+		return -1;
 }
 
 
@@ -993,11 +1047,13 @@ bool GameEngine::DrawBitmap(const Bitmap* bitmapPtr, int left, int top, RECT rec
 {
 	if (m_IsPainting)
 	{
-		if (!bitmapPtr->Exists()) return false;
+		if (!bitmapPtr->Exists()) 
+			return false;
 
 		const int opacity = bitmapPtr->GetOpacity();
 
-		if (opacity == 0 && bitmapPtr->HasAlphaChannel()) return true; // don't draw if opacity == 0 and opacity is used
+		if (opacity == 0 && bitmapPtr->HasAlphaChannel()) 
+			return true; // don't draw if opacity == 0 and opacity is used
 
 		HDC hdcMem = CreateCompatibleDC(m_HdcDraw);
 		HBITMAP hbmOld = (HBITMAP)SelectObject(hdcMem, bitmapPtr->GetHandle());
@@ -1007,21 +1063,24 @@ bool GameEngine::DrawBitmap(const Bitmap* bitmapPtr, int left, int top, RECT rec
 			BLENDFUNCTION blender = { AC_SRC_OVER, 0, (BYTE)(2.55 * opacity), AC_SRC_ALPHA }; // blend function combines opacity and pixel based transparency
 			AlphaBlend(m_HdcDraw, left, top, rect.right - rect.left, rect.bottom - rect.top, hdcMem, rect.left, rect.top, rect.right - rect.left, rect.bottom - rect.top, blender);
 		}
-		else TransparentBlt(m_HdcDraw, left, top, rect.right - rect.left, rect.bottom - rect.top, hdcMem, rect.left, rect.top, rect.right - rect.left, rect.bottom - rect.top, bitmapPtr->GetTransparencyColor());
+		else 
+			TransparentBlt(m_HdcDraw, left, top, rect.right - rect.left, rect.bottom - rect.top, hdcMem, rect.left, rect.top, rect.right - rect.left, rect.bottom - rect.top, bitmapPtr->GetTransparencyColor());
 
 		SelectObject(hdcMem, hbmOld);
 		DeleteDC(hdcMem);
 
 		return true;
 	}
-	else return false;
+	else 
+		return false;
 }
 
 bool GameEngine::DrawBitmap(const Bitmap* bitmapPtr, int left, int top) const
 {
 	if (m_IsPainting)
 	{
-		if (!bitmapPtr->Exists()) return false;
+		if (!bitmapPtr->Exists()) 
+			return false;
 
 		BITMAP bm;
 		GetObject(bitmapPtr->GetHandle(), sizeof(bm), &bm);
@@ -1029,7 +1088,8 @@ bool GameEngine::DrawBitmap(const Bitmap* bitmapPtr, int left, int top) const
 
 		return DrawBitmap(bitmapPtr, left, top, rect);
 	}
-	else return false;
+	else 
+		return false;
 }
 
 bool GameEngine::FillWindowRect(COLORREF color) const
@@ -1203,7 +1263,8 @@ bool Caller::AddListenerObject(Callable* targetPtr)
 {
 	vector<Callable*>::iterator pos = find(m_TargetList.begin(), m_TargetList.end(), targetPtr);
 
-	if (pos != m_TargetList.end()) return false;
+	if (pos != m_TargetList.end()) 
+		return false;
 	
 	m_TargetList.push_back(targetPtr);
 
@@ -1214,7 +1275,8 @@ bool Caller::RemoveListenerObject(const Callable* targetPtr)
 {
 	vector<Callable*>::iterator pos = find(m_TargetList.begin(), m_TargetList.end(), targetPtr); 
 
-	if (pos == m_TargetList.end()) return false;
+	if (pos == m_TargetList.end()) 
+		return false;
 
 	m_TargetList.erase(pos);
 
@@ -1236,11 +1298,14 @@ Bitmap::Bitmap(const tstring& filename, bool createAlphaChannel) : m_HasAlphaCha
 {
 	{	// separate block => the file stream will close 
 		tifstream testExists(filename);
-		if (!testExists.good()) throw FileNotFoundException{filename};
+
+		if (!testExists.good()) 
+			throw FileNotFoundException{filename};
 	}
 
 	size_t len{ filename.length() };
-	if (len < 5) throw BadFilenameException{ filename };
+	if (len < 5) 
+		throw BadFilenameException{ filename };
 
 	tstring suffix{ filename.substr(len - 4) };
 
@@ -1249,7 +1314,8 @@ Bitmap::Bitmap(const tstring& filename, bool createAlphaChannel) : m_HasAlphaCha
 	{
 		m_hBitmap = LoadPNG((TCHAR*) filename.c_str());
 
-		if (!m_hBitmap) throw CouldNotLoadFileException{ filename };
+		if (!m_hBitmap)
+			throw CouldNotLoadFileException{ filename };
 	}
 	// else load as bitmap
 	else if (suffix == _T(".bmp"))

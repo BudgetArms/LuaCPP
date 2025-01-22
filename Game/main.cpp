@@ -75,19 +75,11 @@ int main()
 			);
 
 
-
-
-
-		// Bind HINSTANCE (just a void pointer in Lua, no need to use `new` types)
 		//lua.new_usertype<HINSTANCE>("HINSTANCE");
 
-		// Bind WPARAM (just a uintptr_t in Lua)
 		lua.new_usertype<WPARAM>("WPARAM");
 
-		// Bind the Caller function pointer type
 		//lua.set_function("sampleCaller", sampleCaller);
-
-
 
 
 		const auto scriptResult = lua.script_file("Game/GameEngine.lua");

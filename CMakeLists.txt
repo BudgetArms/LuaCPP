@@ -35,16 +35,22 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(sdl)
 
 # Gather Sources
+            #"Game/main.cpp" 
 list(APPEND SOURCES 
-            "Game/main.cpp" "Engine/GameEngine.cpp" "Engine/Game.cpp" "Engine/AbstractGame.cpp" "Engine/GameWinMain.cpp" 
+            "Engine/GameWinMain.cpp" 
+            "Engine/AbstractGame.cpp" 
+            "Engine/GameEngine.cpp" 
+            "Engine/Game.cpp" 
 )
 
 list(APPEND LUA_SOURCES 
-            "Game/GameEngine.lua"
+            "Game/Game.lua"
             )
 
 # Executable Target
-add_executable(${PROJECT_NAME} ${SOURCES})
+# WIN32 let's  cmake know it should use winmain
+add_executable(${PROJECT_NAME} WIN32 ${SOURCES}) 
+#add_executable(${PROJECT_NAME}  ${SOURCES}) 
 target_link_libraries(${PROJECT_NAME} PRIVATE SDL2::SDL2-static lua::lua sol2)
 target_include_directories(${PROJECT_NAME} PRIVATE ${SDL2_SOURCE_DIR}/include)
 

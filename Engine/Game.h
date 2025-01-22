@@ -15,7 +15,7 @@
 
 
 // include sol
-//#include <sol/sol.hpp>
+#include <sol/sol.hpp>
 
 
 //-----------------------------------------------------------------
@@ -30,6 +30,9 @@ public:
 	Game();
 
 	virtual ~Game() override;
+
+
+	void BindAllTypes(); // custom function
 
 	//---------------------------
 	// Disabling copy/move constructors and assignment operators   
@@ -60,18 +63,21 @@ private:
 	// Datamembers
 	// -------------------------
 
+	sol::state m_Lua;
 
-	//sol::function m_FnInitialize;
-	//sol::function m_FnStart;
-	//sol::function m_FnEnd;
-	//sol::function m_FnPaint;
-	//sol::function m_FnTick;
-	//sol::function m_FnMouseButtonAction;
-	//sol::function m_FnMouseWheelAction;
-	//sol::function m_FnMouseMove;
-	//sol::function m_FnCheckKeyboard;
-	//sol::function m_FnKeyPressed;
-	//sol::function m_FnCallAction;
+	sol::function m_FnBeginGame;
+	sol::function m_FnDestroyGame;
+	sol::function m_FnInitialize;
+	sol::function m_FnStart;
+	sol::function m_FnEnd;
+	sol::function m_FnPaint;
+	sol::function m_FnTick;
+	sol::function m_FnMouseButtonAction;
+	sol::function m_FnMouseWheelAction;
+	sol::function m_FnMouseMove;
+	sol::function m_FnCheckKeyboard;
+	sol::function m_FnKeyPressed;
+	sol::function m_FnCallAction;
 
 
 };
