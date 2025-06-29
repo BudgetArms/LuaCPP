@@ -19,7 +19,7 @@ local paddleSpeed = 300
 local ballX = 0
 local ballY = 0
 local ballRadius = 15
-local ballSpeed = 400
+local ballSpeed = 600
 
 local ballDX = ballSpeed
 local ballDY = -ballSpeed
@@ -158,8 +158,14 @@ function Paint(rect)
     if hasWon then
         GameEngine:SetColor(0x331c18)
         GameEngine:FillRect(0, 0, rect.right, rect.bottom, 100)
+        
+        GameEngine:SetColor(grayColor)
 
-        GameEngine:DrawString("Press R To Play Again", 200, 500)
+        GameEngine:SetFontSize(90)
+        GameEngine:DrawString("Won Game", centerX - 203, centerY - 50)
+
+        GameEngine:SetFontSize(40)
+        GameEngine:DrawString("Press R To Play Again", centerX - 172, centerY + 30)
 
     end
 
@@ -177,8 +183,26 @@ end
 
 function Tick()
 
-    if hasLost or not isBallLaunched then 
+    if hasLost or hasWon or not isBallLaunched then 
         return
+    end
+
+    local areAllBlocksDestroyed = true
+
+    for column = 1, blockCols do
+        for row = 1, blockRows do
+            if blocks[column][row].alive then
+                areAllBlocksDestroyed = false
+                break
+            end
+        end
+        if not areAllBlocksDestroyed then
+            break
+        end
+    end
+
+    if areAllBlocksDestroyed then
+        hasWon = true
     end
 
 

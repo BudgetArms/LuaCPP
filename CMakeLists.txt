@@ -67,8 +67,7 @@ add_custom_target(CopyLuaScripts ALL
 # copy from current dir to build dir
 FOREACH(LUA_SOURCE IN LISTS LUA_SOURCES)
     add_custom_command(TARGET CopyLuaScripts POST_BUILD
-        #COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        COMMAND ${CMAKE_COMMAND} -E copy
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
         ${CMAKE_CURRENT_SOURCE_DIR}/${LUA_SOURCE}
         $<TARGET_FILE_DIR:${PROJECT_NAME}>/${LUA_SOURCE})
 ENDFOREACH()
