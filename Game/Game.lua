@@ -3,6 +3,7 @@ print("Very Cool :D")
 
 local hasWon = false
 local hasLost = false
+local isBallLaunched = false
 
 local grayColor = 0x00F0F0F0
 
@@ -41,21 +42,28 @@ local blockRowColors =
 }
 
 blockRows = 3;
-blockWidth = 20;
+blockWidth = 40;
 blockHeight = 110;
 
+local centerX = 0
+local centerY = 0
+
+
+
 local function ResetBall()
-    print("Reset ball")
+    --print("Reset ball")
 
     ballX = math.floor(paddleX + paddleWidth / 2)
-    ballY = paddleY - paddleHeight - 1
-    ballDX = math.abs(ballSpeed)
-    ballDY = -math.abs(ballSpeed)
+    ballY = paddleY - ballRadius
+    ballDX = 0
+    ballDY = 0
+
+    isBallLaunched = false
 
 end
  
 local function ResetGame()
-    print("Reset Game")
+    --print("Reset Game")
     
     hasWon = false
     hasLost = false
@@ -92,6 +100,9 @@ function InitializeGame()
     print("Lua: Initializing Game")
     GameEngine:SetTitle("LuaGame: Breakout")
 
+    centerX = math.floor(GameEngine:GetWidth() / 2)
+    centerY = math.floor(GameEngine:GetHeight() / 2)
+
     ResetGame()
 
 end
@@ -115,8 +126,9 @@ function Paint(rect)
         for r = 1, blockRows do
             local b = blocks[c][r]
             if b.alive then
-                local blockX = (c - 1)*(blockWidth + blockPadding) + blockOffsetLeft
-                local blockY = (r - 1)*(blockHeight + blockPadding) + blockOffsetTop
+                local blockX = (c - 1) * (blockWidth + blockPadding) + blockOffsetLeft
+                local blockY = (r - 1) * (blockHeight + blockPadding) + blockOffsetTop
+
                 GameEngine:SetColor(blockRowColors[r])
                 GameEngine:FillRect(blockX, blockY, blockX + blockWidth, blockY + blockHeight)
             end
@@ -132,18 +144,33 @@ function Paint(rect)
     -- like of fading game out with a small opacity
     if hasLost then
         GameEngine:SetColor(0x331c18)
-        GameEngine:FillRect(0, 0, rect.right, rect.bottom, 0.5)
+        GameEngine:FillRect(0, 0, rect.right, rect.bottom, 100)
 
+        GameEngine:SetColor(grayColor)
+
+        GameEngine:SetFontSize(90)
+        GameEngine:DrawString("Lost Game", centerX - 196, centerY - 50)
+
+        GameEngine:SetFontSize(40)
+        GameEngine:DrawString("Press R To Restart", centerX - 182, centerY + 30)
 
     end
 
     if hasWon then
         GameEngine:SetColor(0x331c18)
-        GameEngine:FillRect(0, 0, rect.right, rect.bottom, 0.2)
+        GameEngine:FillRect(0, 0, rect.right, rect.bottom, 100)
 
+        GameEngine:DrawString("Press R To Play Again", 200, 500)
 
     end
 
+    if not isBallLaunched then
+        GameEngine:SetColor(grayColor)
+        GameEngine:SetFontSize(40)
+
+        local winH = GameEngine:GetHeight()
+        GameEngine:DrawString("Press Space To launch Ball", centerX - 196, winH - 100)
+    end
 
 
 end
@@ -151,9 +178,10 @@ end
 
 function Tick()
 
-    if hasLost then 
+    if hasLost or not isBallLaunched then 
         return
     end
+
 
     local winW = GameEngine:GetWidth()
     local winH = GameEngine:GetHeight()
@@ -163,38 +191,55 @@ function Tick()
 
 
     if ballX - ballRadius <= 0 or ballX + ballRadius >= winW then
-        print("ball hit side walls")
+        --print("ball hit side walls")
         ballDX = -ballDX
     end
 
     if ballY - ballRadius <= 0 then
-        print("ball hit top")
+        --print("ball hit top")
         ballDY = -ballDY
     end
 
     if ballY + ballRadius >= winH then
-        print("ball hit bottom")
+        --print("ball hit bottom")
         hasLost = true
-        --ResetBall()
     end
 
-
+    -- ball collision with paddle
     if ballY + ballRadius >= paddleY and ballX >= paddleX and ballX <= paddleX + paddleWidth then
         ballDY = -math.abs(ballDY)
+
+    --elseif ballY + ballRadius >= paddleY and ballX >= paddleX and ballX <= paddleX + paddleWidth then
     end
 
 
-    for c = 1, blockCols do
-        for r = 1, blockRows do
-            local b = blocks[c][r]
-            if b.alive then
-                local blockX = (c - 1)*(blockWidth + blockPadding) + blockOffsetLeft
-                local blockY = (r - 1)*(blockHeight + blockPadding) + blockOffsetTop
+    for column = 1, blockCols do
+        for row = 1, blockRows do
+            local block = blocks[column][row]
+            if block.alive then
+                local blockX = (column - 1) * (blockWidth + blockPadding) + blockOffsetLeft
+                local blockY = (row - 1) * (blockHeight + blockPadding) + blockOffsetTop
+                
+                if ((ballX + ballRadius >= blockX) and (ballX - ballRadius <= blockX + blockWidth) and
+                    (ballY + ballRadius >= blockY) and (ballY - ballRadius <= blockY + blockHeight)) then
 
-                if ballX + ballRadius >= blockX and ballX - ballRadius <= blockX + blockWidth and
-                   ballY + ballRadius >= blockY and ballY - ballRadius <= blockY + blockHeight then
-                    ballDY = -ballDY
-                    b.alive = false
+                    local overlappingLeft = (ballX + ballRadius) - blockX;
+                    local overlappingRight = -(ballX - ballRadius) + (blockX + blockWidth);
+                    local overlappingBottom = -(ballY - ballRadius) + (blockY + blockHeight);
+                    local overlappingTop = (ballY + ballRadius) - blockY;
+                   
+                    -- the one with the least overlapping length is where the real overlapping happened
+                    local minOverlappingLength = math.min(overlappingLeft, overlappingRight, overlappingBottom, overlappingTop)
+
+                    if (minOverlappingLength == overlappingLeft) or (minOverlappingLength == overlappingRight) then
+                        ballDX = -ballDX 
+                    elseif(minOverlappingLength == overlappingBottom) or (minOverlappingLength == overlappingTop) then
+                        ballDY = -ballDY
+                    else 
+                        print("tf??")
+                    end
+                   
+                    block.alive = false
                 end
             end
         end
@@ -207,14 +252,25 @@ end
 
 function CheckKeyKeyboard()
     if hasLost or hasWon then
-        if GameEngine:IsKeyDown(32) then -- space bar
+        if GameEngine:IsKeyDown(82) then -- R key
+            print("test2")
             ResetGame()
         end
+        return
+    end
 
+    if not isBallLaunched then
+        if GameEngine:IsKeyDown(32) then  -- space bar
+            isBallLaunched = true
+
+            ballDX = ballSpeed 
+            ballDY = -ballSpeed 
+        end
         return
     end
 
     if GameEngine:IsKeyDown(65) then -- A key
+        print("test4")
         paddleX = paddleX - paddleSpeed
     end
     if GameEngine:IsKeyDown(68) then -- D key

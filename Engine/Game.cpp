@@ -94,6 +94,8 @@ void Game::BindAllTypes()
             //),
 
             "SetColor", &GameEngine::SetColor,
+            "SetFont", &GameEngine::SetFont,
+            "SetFontSize", &GameEngine::SetFontSize,
             "DrawLine", &GameEngine::DrawLine,
             "DrawRect", &GameEngine::DrawRect,
             "FillRect", sol::overload(

@@ -103,6 +103,7 @@ public:
     // Draw Functions
     void		SetColor(COLORREF color);
     void		SetFont(Font* fontPtr);
+    void		SetFontSize(int size);
 
     bool		FillWindowRect(COLORREF color)														const;
 

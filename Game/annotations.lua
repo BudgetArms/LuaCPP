@@ -1,9 +1,7 @@
 ﻿---@meta
 --- This file provides type annotations for Lua scripts interacting with C++ via SOL2.
 
-
 GameEngine = {}
---- function GameEngine.new() end
 
 
 --- # Sets the title of the window
@@ -113,6 +111,11 @@ function GameEngine:SetColor(color) end
 --- Sets the font of the text 
 --- @return nil
 function GameEngine:SetFont(font) end
+ 
+
+--- Sets the size of the current text font 
+--- @return nil
+function GameEngine:SetFontSize(size) end
 
 
 --- draw line 
