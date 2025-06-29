@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.20)
+﻿cmake_minimum_required(VERSION 3.20)
 
 project(LuaGame)
 
@@ -34,51 +34,46 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(sdl)
 
-# Gather Sources
-            #"Game/main.cpp" 
+
 list(APPEND SOURCES 
-            "Engine/GameWinMain.cpp" 
-            "Engine/AbstractGame.cpp" 
-            "Engine/GameEngine.cpp" 
-            "Engine/Game.cpp" 
+    "Engine/GameWinMain.cpp" 
+    "Engine/AbstractGame.cpp" 
+    "Engine/GameEngine.cpp" 
+    "Engine/Game.cpp" 
 )
 
 list(APPEND LUA_SOURCES 
-            "Game/Game.lua"
-            )
+    "Game/Game.lua"
+)
 
 # Executable Target
-# WIN32 let's  cmake know it should use winmain
 add_executable(${PROJECT_NAME} WIN32 ${SOURCES}) 
-#add_executable(${PROJECT_NAME}  ${SOURCES}) 
+
+#link libraries
 target_link_libraries(${PROJECT_NAME} PRIVATE SDL2::SDL2-static lua::lua sol2)
+
+#Include 
 target_include_directories(${PROJECT_NAME} PRIVATE ${SDL2_SOURCE_DIR}/include)
-
-#target_include_directories(${PROJECT_NAME} PRIVATE src)
 target_include_directories(${PROJECT_NAME} PRIVATE Engine)
-#target_include_directories(${PROJECT_NAME} PRIVATE Engine)
-
 
 add_definitions(-DUNICODE -D_UNICODE)
 
 
 # Copy Lua Scripts
-add_custom_target(CopyScripts ALL
+add_custom_target(CopyLuaScripts ALL
     COMMENT "Copying Lua scripts to output directory"
 )
 
-# copy lua source to target
+# copy from current dir to build dir
 FOREACH(LUA_SOURCE IN LISTS LUA_SOURCES)
-    add_custom_command(TARGET CopyScripts POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+    add_custom_command(TARGET CopyLuaScripts POST_BUILD
+        #COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        COMMAND ${CMAKE_COMMAND} -E copy
         ${CMAKE_CURRENT_SOURCE_DIR}/${LUA_SOURCE}
         $<TARGET_FILE_DIR:${PROJECT_NAME}>/${LUA_SOURCE})
 ENDFOREACH()
 
-
-add_dependencies(CopyScripts ${PROJECT_NAME})
-
-
-
+# copy lua source to target
+add_dependencies(CopyLuaScripts ${PROJECT_NAME})
 
 

@@ -1,10 +1,8 @@
----@meta
+﻿---@meta
 --- This file provides type annotations for Lua scripts interacting with C++ via SOL2.
 
+
 GameEngine = {}
-
-FlowerNice = {}
-
 --- function GameEngine.new() end
 
 
@@ -269,7 +267,6 @@ function GameEngine:GetFrameRate() end
 --- Gets the frame delay
 --- @return number
 function GameEngine:GetFrameDelay() end
-
 
 
 

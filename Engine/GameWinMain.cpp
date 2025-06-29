@@ -11,6 +11,7 @@
 
 #include "Game.h"	
 
+
 //-----------------------------------------------------------------
 // Create GAME_ENGINE global (singleton) object and pointer
 //-----------------------------------------------------------------
@@ -33,7 +34,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance
 
 	GAME_ENGINE->SetGame(new Game());					// any class that implements AbstractGame
 	std::cout << "wWinMain start" << "\n";
-	return GAME_ENGINE->Run(hInstance, nCmdShow);		// here we go
+	GAME_ENGINE->Run(hInstance, nCmdShow);		// here we go
+
+	return 0;
 
 }
 

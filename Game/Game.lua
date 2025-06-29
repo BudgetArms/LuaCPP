@@ -1,93 +1,257 @@
---- script_annotations.lua has the annotations EmmyLua annotations for the GameEngine
+﻿print("GameEngine.lua")
+print("Very Cool :D")
 
-print("GameEngine.lua")
-print("Cool :D")
+local hasWon = false
+local hasLost = false
 
---print("Game", Game)
+local grayColor = 0x00F0F0F0
 
---Game:SetTitle("COOL")
+local paddleX = 0
+local paddleY = 0
+local paddleWidth = 175
+local paddleHeight = 20
+local paddleSpeed = 8
+
+local ballX = 0
+local ballY = 0
+local ballRadius = 15
+local ballSpeed = 8
+
+local ballDX = ballSpeed
+local ballDY = -ballSpeed
 
 
---print("Game Title:", Game:GetTitle())
+local blocks = {}
+
+local blockRows = 6
+local blockCols = 15
+local blockWidth = 63
+local blockHeight = 20
+local blockPadding = 5
+local blockOffsetTop = 10
+local blockOffsetLeft = 4
+local blockRowColors = 
+{
+    0x004848C8, -- top
+    0x003A6CC6,
+    0x00307AB4,
+    0x002AA2A2,
+    0x0048A048,
+    0x00C84842,  -- bottom
+}
+
+blockRows = 3;
+blockWidth = 20;
+blockHeight = 110;
+
+local function ResetBall()
+    print("Reset ball")
+
+    ballX = math.floor(paddleX + paddleWidth / 2)
+    ballY = paddleY - paddleHeight - 1
+    ballDX = math.abs(ballSpeed)
+    ballDY = -math.abs(ballSpeed)
+
+end
+ 
+local function ResetGame()
+    print("Reset Game")
+    
+    hasWon = false
+    hasLost = false
+
+    local winW = GameEngine:GetWidth()
+    local winH = GameEngine:GetHeight()
+    paddleX = math.floor((winW - paddleWidth) / 2)
+    paddleY = math.floor(winH - paddleHeight - 180)
+
+    ResetBall()
+
+    for c = 1, blockCols do
+        blocks[c] = {}
+        for r = 1, blockRows do
+            blocks[c][r] = { x = 0, y = 0, alive = true }
+        end
+    end
 
 
---Game:SetTitle("COOL")
-
---Game:GoFullScreen(true)
-
-
-print("END of Lua ???")
-
-
-function NormalFunction()
-    print("Normal Function in Lua")
 end
 
-Yeah={}
-TestGameEngine ={}
 
---[[
-]]
-
-Game = {}
-print("Yeah: ", Yeah)
-
-print("TestGameEngine: ", TestGameEngine)
-print("Game: ", Game)
-function Game:BeginGame()
+function BeginGame()
     print("Lua: Game Begin")
 end
 
-function Game:DestroyGame()
+
+function DestroyGame()
     print("Lua: Game Destroy")
 end
 
-function Game:InitializeGame()
+
+function InitializeGame()
     print("Lua: Initializing Game")
+    GameEngine:SetTitle("LuaGame: Breakout")
+
+    ResetGame()
+
 end
 
-function Game:GameStart()
+
+function GameStart()
     print("Lua: Game Start")
 end
 
-function Game:GameEnd()
+
+function GameEnd()
     print("Lua: Game End")
 end
 
-function Game:Paint(rect)
-    print("Lua: Paint called for", rect)
+
+function Paint(rect)
+    GameEngine:SetColor(0x331c18)
+    GameEngine:FillRect(0, 0, rect.right, rect.bottom)
+
+    for c = 1, blockCols do
+        for r = 1, blockRows do
+            local b = blocks[c][r]
+            if b.alive then
+                local blockX = (c - 1)*(blockWidth + blockPadding) + blockOffsetLeft
+                local blockY = (r - 1)*(blockHeight + blockPadding) + blockOffsetTop
+                GameEngine:SetColor(blockRowColors[r])
+                GameEngine:FillRect(blockX, blockY, blockX + blockWidth, blockY + blockHeight)
+            end
+        end
+    end
+    
+
+    GameEngine:SetColor(grayColor)
+    GameEngine:FillRect(paddleX, paddleY, paddleX + paddleWidth, paddleY + paddleHeight)
+    GameEngine:FillOval(ballX - ballRadius, ballY + ballRadius, ballX + ballRadius, ballY - ballRadius)
+
+
+    -- like of fading game out with a small opacity
+    if hasLost then
+        GameEngine:SetColor(0x331c18)
+        GameEngine:FillRect(0, 0, rect.right, rect.bottom, 0.5)
+
+
+    end
+
+    if hasWon then
+        GameEngine:SetColor(0x331c18)
+        GameEngine:FillRect(0, 0, rect.right, rect.bottom, 0.2)
+
+
+    end
+
+
+
 end
 
-function Game:Tick()
-    print("Lua: Tick called")
+
+function Tick()
+
+    if hasLost then 
+        return
+    end
+
+    local winW = GameEngine:GetWidth()
+    local winH = GameEngine:GetHeight()
+
+    ballX = ballX + ballDX
+    ballY = ballY + ballDY
+
+
+    if ballX - ballRadius <= 0 or ballX + ballRadius >= winW then
+        print("ball hit side walls")
+        ballDX = -ballDX
+    end
+
+    if ballY - ballRadius <= 0 then
+        print("ball hit top")
+        ballDY = -ballDY
+    end
+
+    if ballY + ballRadius >= winH then
+        print("ball hit bottom")
+        hasLost = true
+        --ResetBall()
+    end
+
+
+    if ballY + ballRadius >= paddleY and ballX >= paddleX and ballX <= paddleX + paddleWidth then
+        ballDY = -math.abs(ballDY)
+    end
+
+
+    for c = 1, blockCols do
+        for r = 1, blockRows do
+            local b = blocks[c][r]
+            if b.alive then
+                local blockX = (c - 1)*(blockWidth + blockPadding) + blockOffsetLeft
+                local blockY = (r - 1)*(blockHeight + blockPadding) + blockOffsetTop
+
+                if ballX + ballRadius >= blockX and ballX - ballRadius <= blockX + blockWidth and
+                   ballY + ballRadius >= blockY and ballY - ballRadius <= blockY + blockHeight then
+                    ballDY = -ballDY
+                    b.alive = false
+                end
+            end
+        end
+    end
+
+    CheckKeyKeyboard()
+
 end
 
-function Game:MouseButtonAction(button, x, y)
-    print("Lua: Mouse button", button, "at", x, y)
+
+function CheckKeyKeyboard()
+    if hasLost or hasWon then
+        if GameEngine:IsKeyDown(32) then -- space bar
+            ResetGame()
+        end
+
+        return
+    end
+
+    if GameEngine:IsKeyDown(65) then -- A key
+        paddleX = paddleX - paddleSpeed
+    end
+    if GameEngine:IsKeyDown(68) then -- D key
+        paddleX = paddleX + paddleSpeed
+    end
+
+    local winW = GameEngine:GetWidth()
+    if paddleX < 0 then
+        paddleX = 0
+    elseif paddleX + paddleWidth > winW then
+        paddleX = winW - paddleWidth
+    end
+
 end
 
-function Game:MouseWheelAction(delta, x, y)
-    print("Lua: Mouse wheel", delta, "at", x, y)
+
+function MouseButtonAction(button, x, y)
 end
 
-function Game:MouseMove(x, y)
-    print("Lua: Mouse move at", x, y)
+
+function MouseWheelAction(delta, x, y)
 end
 
-function Game:CheckKeyKeyboard()
-    print("Lua: Checking Keyboard")
+
+function MouseMove(x, y)
 end
 
-function Game:KeyPressed(key)
+
+function KeyPressed(key)
     print("Lua: Key pressed", key)
 end
 
-function Game:CallAction(action)
+
+function CallAction(action)
     print("Lua: Action called", action)
 end
 
 
-
---]]
 
 

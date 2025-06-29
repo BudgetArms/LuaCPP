@@ -1,4 +1,4 @@
----@meta
+﻿---@meta
 --- This file provides type annotations for Lua scripts interacting with C++ via SOL2.
 --- Game Specific
 
@@ -15,9 +15,5 @@ function Game:Paint(rect) end
 function Game:Tick() end
 
 function Game:CallAction(callerPtr) end
-
-
---- GameEngine = nil
-
 
 

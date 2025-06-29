@@ -773,7 +773,6 @@ bool GameEngine::FillOval(int left, int top, int right, int bottom, int opacity)
 	if (m_IsPainting)
 	{
 		COLORREF color = m_ColDraw;
-
 		if (color == RGB(0, 0, 0)) 
 			color = RGB(0, 0, 1);
 
