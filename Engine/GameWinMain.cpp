@@ -26,9 +26,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance
 
 #if defined(DEBUG) || defined(_DEBUG)
     // Creates console window
-    AllocConsole();
+    //AllocConsole();
     // Redirect stdout to the console, so we can debug
-    freopen("CONOUT$", "w", stdout);
+    //freopen("CONOUT$", "w", stdout);
 #endif
 
 

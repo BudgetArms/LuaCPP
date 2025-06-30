@@ -31,26 +31,24 @@ Game::Game()
         m_Lua["GameEngine"] = GAME_ENGINE;
 
 
-        const std::string gamePath{ "Game/Game.lua" };
+        const std::string gamePath{ "Game_Breakout/Game.lua" };
 
         if (!std::filesystem::exists(gamePath))
             throw std::exception("ERROR: LUA FILE NOT FOUND");
 
         m_Lua.safe_script_file(gamePath);
 
-        m_FnBeginGame = m_Lua["BeginGame"];
-        m_FnDestroyGame = m_Lua["DestroyGame"];
         m_FnInitialize = m_Lua["InitializeGame"];
-        m_FnStart = m_Lua["GameStart"];
-        m_FnEnd = m_Lua["GameEnd"];
+        //m_FnStart = m_Lua["GameStart"];
+        //m_FnEnd = m_Lua["GameEnd"];
         m_FnPaint = m_Lua["Paint"];
         m_FnTick = m_Lua["Tick"];
-        m_FnMouseButtonAction = m_Lua["MouseButtonAction"];
-        m_FnMouseWheelAction = m_Lua["MouseWheelAction"];
-        m_FnMouseMove = m_Lua["MouseMove"];
+        //m_FnMouseButtonAction = m_Lua["MouseButtonAction"];
+        //m_FnMouseWheelAction = m_Lua["MouseWheelAction"];
+        //m_FnMouseMove = m_Lua["MouseMove"];
         m_FnCheckKeyboard = m_Lua["CheckKeyKeyboard"];
-        m_FnKeyPressed = m_Lua["KeyPressed"];
-        m_FnCallAction = m_Lua["CallAction"];
+        //m_FnKeyPressed = m_Lua["KeyPressed"];
+        //m_FnCallAction = m_Lua["CallAction"];
 
 
     }
@@ -65,7 +63,6 @@ Game::Game()
 Game::~Game()
 {
     // nothing to destroy
-    m_FnDestroyGame();
 }
 
 void Game::BindAllTypes()
@@ -153,13 +150,13 @@ void Game::Initialize()
 void Game::Start()
 {
     // Insert code that needs to execute (once) at the start of the game, after the game window is created
-    m_FnStart();
+    //m_FnStart();
 }
 
 void Game::End()
 {
     // Insert code that needs to execute when the game ends
-    m_FnEnd();
+    //m_FnEnd();
 }
 
 void Game::Paint(RECT rect) const
@@ -178,19 +175,19 @@ void Game::Tick()
 void Game::MouseButtonAction(bool isLeft, bool isDown, int x, int y, WPARAM wParam)
 {
     // Insert code for a mouse button action
-    m_FnMouseButtonAction(isLeft, isDown, x, y, wParam);
+    //m_FnMouseButtonAction(isLeft, isDown, x, y, wParam);
 }
 
 void Game::MouseWheelAction(int x, int y, int distance, WPARAM wParam)
 {
     // Insert code for a mouse wheel action
-    m_FnMouseWheelAction(x, y, distance, wParam);
+    //m_FnMouseWheelAction(x, y, distance, wParam);
 }
 
 void Game::MouseMove(int x, int y, WPARAM wParam)
 {
     // Insert code that needs to execute when the mouse pointer moves across the game window
-    m_FnMouseMove(x, y, wParam);
+    //m_FnMouseMove(x, y, wParam);
 }
 
 void Game::CheckKeyboard()
@@ -212,13 +209,13 @@ void Game::KeyPressed(TCHAR key)
     // Insert code that needs to execute when a key is pressed
     // The function is executed when the key is *released*
     // You need to specify the list of keys with the SetKeyList() function
-    m_FnKeyPressed(key);
+    //m_FnKeyPressed(key);
 }
 
 void Game::CallAction(Caller* callerPtr)
 {
     // Insert the code that needs to execute when a Caller (= Button, TextBox, Timer, Audio) executes an action
-    m_FnCallAction(callerPtr);
+    //m_FnCallAction(callerPtr);
 }
 
 

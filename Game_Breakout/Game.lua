@@ -19,7 +19,7 @@ local paddleSpeed = 300
 local ballX = 0
 local ballY = 0
 local ballRadius = 15
-local ballSpeed = 600
+local ballSpeed = 550
 
 local ballDX = ballSpeed
 local ballDY = -ballSpeed
@@ -84,16 +84,6 @@ local function ResetGame()
 end
 
 
-function BeginGame()
-    --print("Lua: Game Begin")
-end
-
-
-function DestroyGame()
-    --print("Lua: Game Destroy")
-end
-
-
 function InitializeGame()
     --print("Lua: Initializing Game")
     GameEngine:SetTitle("LuaGame: Breakout")
@@ -104,16 +94,6 @@ function InitializeGame()
 
     ResetGame()
 
-end
-
-
-function GameStart()
-    --print("Lua: Game Start")
-end
-
-
-function GameEnd()
-    --print("Lua: Game End")
 end
 
 
@@ -334,6 +314,7 @@ function CheckKeyKeyboard()
 
 end
 
+--[[
 
 function MouseButtonAction(button, x, y)
 end
@@ -356,6 +337,6 @@ function CallAction(action)
     --print("Lua: Action called", action)
 end
 
-
+]]
 
 

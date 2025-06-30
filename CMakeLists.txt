@@ -43,7 +43,7 @@ list(APPEND SOURCES
 )
 
 list(APPEND LUA_SOURCES 
-    "Game/Game.lua"
+    "Game_Breakout/Game.lua"
 )
 
 # Executable Target
